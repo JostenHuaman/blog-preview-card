@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Figtree";
+    font-size: 16px;
+    background-color: var(--Yellow);
+    & .container{
+        border: 2px solid black;
+        border-radius: 15px;
+        background-color: var(--White);
+        box-shadow: 6px 6px 0px 3px rgba(0,0,0,1);
+        -webkit-box-shadow: 6px 6px 0px 3px rgba(0,0,0,1);
+        -moz-box-shadow: 6px 6px 0px 3px rgba(0,0,0,1);
+        width: 320px;
+        height: 500px;
+        margin: 15% auto;
+        & .illustration{
+            width: 280px;
+            margin: 20px 20px;
+            border-radius: 15px;
+        }
+        & h2{
+            font-size: 1em;
+            margin-left: 20px;
+            display: inline-block;
+            padding: 8px;
+            background-color: var(--Yellow);
+            font-weight: 800;
+            border-radius: 5px;
+        }
+        & .date{
+            font-size: 1em;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        & h1{
+            font-size: 1.2em;
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+        & .description{
+            font-size: 1em;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: 400;
+            color: var(--Grey);
+            line-height: 1.5em;
+        }
+        & .user{
+            border: none;
+            display: flex;
+            margin-left: 20px;
+            margin-top: 20px;
+            width: 200px;
+            align-items: center;
+            & img{
+                width: 40px;
+            }
+            & p{
+                font-size: 1em;
+                margin-left: 20px;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.attribution { font-size: 1.2em; text-align: center; color: var(--Black); }
+.attribution a { color: var(--Black); }
+
+
+@media (min-width: 767px){
+    body{
+        & .container{
+            margin: 25% auto;
+        }
+    }
+}
+
+@media (min-width: 1439px){
+    body{
+        & .container{
+            margin: 10% auto;
+        }
+    }
+}
+    
